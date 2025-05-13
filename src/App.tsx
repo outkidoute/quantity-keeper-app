@@ -19,6 +19,7 @@ import Categories from "@/pages/Categories";
 import Suppliers from "@/pages/Suppliers";
 import StockAdjustments from "@/pages/StockAdjustments";
 import Reports from "@/pages/Reports";
+import Orders from "@/pages/Orders";
 import NotFound from "@/pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +45,7 @@ const App = () => {
                   <Route path="/categories" element={<Categories />} />
                   <Route path="/suppliers" element={<Suppliers />} />
                   <Route path="/stock-adjustments" element={<StockAdjustments />} />
+                  <Route path="/orders" element={<Orders />} />
                   <Route path="/reports" element={<Reports />} />
                 </Route>
               </Route>

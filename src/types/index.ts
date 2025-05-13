@@ -72,6 +72,37 @@ export interface SupplierFormData {
   address?: string;
 }
 
+// Order types
+export interface Order {
+  id: number;
+  order_number: string;
+  customer_name: string;
+  customer_email: string;
+  status: 'pending' | 'processing' | 'completed' | 'cancelled';
+  total_amount: number;
+  order_items: OrderItem[];
+  created_at: string;
+  updated_at: string;
+}
+
+export interface OrderItem {
+  id: number;
+  order_id: number;
+  product_id: number;
+  quantity: number;
+  unit_price: number;
+  product?: Product;
+}
+
+export interface OrderFormData {
+  customer_name: string;
+  customer_email: string;
+  order_items: {
+    product_id: number;
+    quantity: number;
+  }[];
+}
+
 // Stock adjustment types
 export interface StockAdjustment {
   id: number;

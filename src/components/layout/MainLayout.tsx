@@ -12,8 +12,7 @@ import {
   BarChart3, 
   LogOut, 
   Menu, 
-  X,
-  ShoppingCart 
+  X
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -110,11 +109,6 @@ const MainLayout = () => {
               to="/stock-adjustments" 
               icon={<ArrowUpDown className="h-5 w-5" />}
               label="Stock Adjustments" 
-            />
-            <NavItem 
-              to="/orders" 
-              icon={<ShoppingCart className="h-5 w-5" />}
-              label="Orders" 
             />
             <NavItem 
               to="/reports" 
